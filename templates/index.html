@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Convertidor de Marke37 a HTML</title>
+	<meta name="description" content="Convertidor de Marke37 a HTML - Un software de experimento37">
+	<meta name="author" content="Carlos Ramos">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.1/css/bulma.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+	<script src="https://unpkg.com/hotkeys-js/dist/hotkeys.min.js"></script>
+</head>
+
+<body>
+	<div class="columns">
+		<div class="column">
+			<textarea id="txtLetra" class="textarea is-size-4 has-fixed-size has-background-dark has-text-white" spellcheck="false" cols="1" rows="10"></textarea>
+		</div>
+		<div class="column">
+			<div id="divLetraContainer" class="has-background-black has-text-light is-size-4">
+				<div id="divLetra"></div>
+				<br>
+			</div>
+
+			<nav class="navbar is-black" role="navigation" aria-label="main navigation">
+				<div class="container is-fluid">
+					<div class="navbar-menu">
+						<div class="navbar-end">
+							<div class="navbar-item">
+								<div class="field is-grouped is-grouped-multiline">
+									<div class="control">
+										<div class="tags has-addons" id="divConvertidor">
+											<span class="tag is-black">conv</span>
+											<span class="tag is-dark" id="spnConvertidor">html</span>
+										</div>
+									</div>
+
+									<div class="control">
+										<div class="tags has-addons">
+											<span class="tag is-black">líneas</span>
+											<span id="spnLineas" class="tag is-dark">000</span>
+										</div>
+									</div>
+
+									<div class="control">
+										<div class="tags has-addons">
+											<span class="tag is-black">palabras</span>
+											<span id="spnPalabras" class="tag is-dark">000</span>
+										</div>
+									</div>
+
+									<div class="control">
+										<div class="tags">
+											<span class="tag is-link" id="btnCopiar" data-clipboard-target="#divLetra">copiar</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+	<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

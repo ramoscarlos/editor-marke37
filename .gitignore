@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__
+bin
+*.sublime-workspace
+lib
+pyvenv.cfg
+convertidores/__pycache__

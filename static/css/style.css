@@ -1,0 +1,118 @@
+/* Colores de secciones: https://www.rapidtables.com/web/color/orange-color.html  */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+	font-size: 10pt;
+}
+
+.columns {
+	height: 102.4%;
+}
+.column {
+	padding: 0;
+}
+
+.table, .table td, .table tr {
+	padding: 0 !important;
+}
+
+.navbar {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	background-color: transparent !important;
+}
+
+.is-dark, .has-background-dark {
+	background: #1e1e1e !important;
+}
+
+.table.is-borderless td,
+.table.is-borderless th {
+    border: 0;
+}
+
+.tag {
+	font-family: monospace;
+}
+
+#txtLetra, #divLetraContainer {
+	font-family: monospace;
+	overflow: scroll;
+	padding: 0.5em;
+	height: 100%;
+}
+
+#txtLetra {
+	border: none;
+	padding: 1em;
+}
+
+/* Estilo del HTML de la letra */
+
+.titulo {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	font-size: larger;
+}
+
+.seccion {
+	margin-bottom: 1em;
+}
+
+.seccion-precoro {
+  font-weight: bold;
+  color: #FF7F50; /* coral */
+}
+
+.seccion-coro {
+	font-weight: bold;
+	color: #FF4500; /* orangered */
+}
+
+.seccion-postcoro {
+	font-weight: bold;
+	color: #FF6347; /* tomato */
+}
+
+.seccion-puente {
+	font-style: italic;
+	color: #FFD700; /* gold */
+}
+
+.seccion-intro {
+	color: #00BFFF; /* deepskyblue  */
+}
+
+.seccion-outro {
+	color: #6495ED; /* cornflowerblue  */
+}
+
+.seccion-intro,
+.seccion-outro {
+	font-style: italic;
+	font-weight: bold;
+}
+
+/* Configuraciones por tipo de letra  */
+
+.letra-im-html .titulo {
+	text-align: left;
+}
+.letra-im-html .titulo,
+.letra-im-html .seccion {
+	margin-bottom: 0.5em;
+}
+
+
+
+
+/* El título en Markdown no se graba en mayúsculas */
+tr.seccion-titulo td.impresion-markdown {
+	text-transform: none;
+}
